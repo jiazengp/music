@@ -1,0 +1,16 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "watch": ["netease_api/"],
+  "ignore": [
+    "netease_api/test",
+    "netease_api/static",
+    "netease_api/public",
+    "netease_api/.github",
+    "netease_api/.husky",
+    "netease_api/docs",
+    "netease_api/*.md"
+  ],
+  "delay": "1000",
+  "exec": "node ./netease_api/index.js"
+}

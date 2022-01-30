@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussion
+    url: https://github.com/jiazengp/music/discussions
+    about: Please ask and answer questions here.
+  - name: Support Us
+    url: https://music.zengjia.site/support
+    about: Support the author

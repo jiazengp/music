@@ -1,0 +1,9 @@
+services:
+  Music:
+    build:
+      context: .
+    image: Music
+    container_name: Music
+    ports:
+      - 80:80
+    restart: always

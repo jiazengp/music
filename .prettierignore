@@ -1,0 +1,8 @@
+build
+coverage
+dist
+netease_api
+.github
+.vscode
+.husky
+pnpm-lock.yaml
