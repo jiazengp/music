@@ -4,11 +4,11 @@
     {
       "source": "/api/:match*",
       "destination": "https://netease-cloud-music-api.zengjia.site/:match*"
-    },
-    {
-      "source": "/*",
-      "destination": "/index.html"
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ],
   "headers": [
     {
