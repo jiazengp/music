@@ -7,7 +7,7 @@ RUN npm install
 COPY . .
 RUN pnpm build
 
-FROM nginx:1.20.2-alpine as app
+FROM nginx:1.21.6-alpine as app
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/main libuv \
     && apk add --no-cache --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/main nodejs npm pnpm
 
