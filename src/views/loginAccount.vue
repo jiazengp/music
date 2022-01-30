@@ -235,7 +235,7 @@ export default {
               width: 192,
               margin: 0,
               color: {
-                dark: '#ffffff',
+                dark: document.body.dataset.theme === 'dark'? '#ffffff':'#212121',
                 light: '#00000000',
               },
             }
