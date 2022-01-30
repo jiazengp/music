@@ -1,15 +1,25 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "./index.js",
       "use": "@vercel/node"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "*",
+      "headers": [
+        {
+          "key": "access-control-allow-origin",
+          "value": "music.zengjia.site"
+        }
+      ]
     }
   ]
 }
