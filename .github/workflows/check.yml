@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - dev
-      - main
+      - master
     paths-ignore:
       - '**.md'
   pull_request:
     branches:
       - dev
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
