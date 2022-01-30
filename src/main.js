@@ -13,9 +13,26 @@ import '@/utils/filters'
 import '@/assets/css/normalize.scss'
 import '@/assets/css/global.scss'
 import '@/assets/css/nprogress.css'
+import * as Sentry from "@sentry/vue";
+import { Integrations } from "@sentry/tracing";
 
 Vue.config.productionTip = false
 Vue.config.devtools = true
+
+Sentry.init({
+  Vue,
+  dsn: "https://b8d5df51c46a4b7a99e1544caf993039@o1130720.ingest.sentry.io/6174836",
+  integrations: [
+    new Integrations.BrowserTracing({
+      routingInstrumentation: Sentry.vueRouterInstrumentation(router),
+      tracingOrigins: ["localhost", "my-site-url.com", /^\//],
+    }),
+  ],
+  // Set tracesSampleRate to 1.0 to capture 100%
+  // of transactions for performance monitoring.
+  // We recommend adjusting this value in production
+  tracesSampleRate: 1.0,
+});
 
 window.resetApp = () => {
   localStorage.clear()
