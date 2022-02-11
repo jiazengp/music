@@ -27,7 +27,7 @@ specifiers:
   axios: 0.21.4
   change-case: 4.1.2
   cli-color: 2.0.1
-  color: 3.2.1
+  color: 4.2.1
   conventional-changelog-cli: 2.2.2
   core-js: 3.20.3
   critters: 0.0.16
@@ -102,7 +102,7 @@ dependencies:
   axios: 0.21.4
   change-case: 4.1.2
   cli-color: 2.0.1
-  color: 3.2.1
+  color: 4.2.1
   conventional-changelog-cli: 2.2.2
   core-js: 3.20.3
   critters: 0.0.16
@@ -2130,7 +2130,7 @@ packages:
     optional: true
 
   /@unblockneteasemusic/server/0.27.0-rc.4:
-    resolution: {integrity: sha512-fqFStb71/N9Ek9VoYRF4ConMc1A7LJBBCzOz2Haq3UnXi4W7tlvWb038ih/qh7wH03/qJGLDxxD3oThJQHJFZQ==, tarball: '@unblockneteasemusic/server/-/server-0.27.0-rc.4.tgz'}
+    resolution: {integrity: sha512-fqFStb71/N9Ek9VoYRF4ConMc1A7LJBBCzOz2Haq3UnXi4W7tlvWb038ih/qh7wH03/qJGLDxxD3oThJQHJFZQ==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:
@@ -3111,10 +3111,11 @@ packages:
       simple-swizzle: 0.2.2
     dev: false
 
-  /color/3.2.1:
-    resolution: {integrity: sha512-aBl7dZI9ENN6fUGC7mWpMTPNHmWUSNan9tuWN6ahh5ZLNk9baLJOnSMlrQkHcrfFgz2/RigjUVAjdx36VcemKA==}
+  /color/4.2.1:
+    resolution: {integrity: sha512-MFJr0uY4RvTQUKvPq7dh9grVOTYSFeXja2mBXioCGjnjJoXrAp9jJ1NQTDR73c9nwBSAQiNKloKl5zq9WB9UPw==}
+    engines: {node: '>=12.5.0'}
     dependencies:
-      color-convert: 1.9.3
+      color-convert: 2.0.1
       color-string: 1.9.0
     dev: false
 
