@@ -1,4 +1,4 @@
-FROM node:16.13.2-alpine as build
+FROM node:17.6.0-alpine as build
 ENV VITE_APP_NETEASE_API_URL=/api
 WORKDIR /app
 RUN apk add --no-cache python3 make g++
