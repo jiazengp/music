@@ -113,6 +113,13 @@ export default {
   display: grid;
 }
 
+@media (max-width: 1336px) {
+  .cover-row {
+    margin: 0 -5vw;
+    padding: 0 5vw;
+  }
+}
+
 .item {
   color: var(--color-text);
   .text {
