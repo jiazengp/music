@@ -53,7 +53,7 @@ specifiers:
   nprogress: 0.2.0
   pac-proxy-agent: 4.1.0
   plyr: 3.6.12
-  pnpm: 6.29.0
+  pnpm: 6.32.3
   prettier: 2.1.2
   qrcode: 1.5.0
   regenerator-runtime: 0.13.9
@@ -127,7 +127,7 @@ dependencies:
   nprogress: 0.2.0
   pac-proxy-agent: 4.1.0
   plyr: 3.6.12
-  pnpm: 6.29.0
+  pnpm: 6.32.3
   prettier: 2.1.2
   qrcode: 1.5.0
   regenerator-runtime: 0.13.9
@@ -6914,8 +6914,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: false
 
-  /pnpm/6.29.0:
-    resolution: {integrity: sha512-JaWW7Lgqz1eqs0/THVVOJfDD93e4nQUYNjLegcPkVhIxbMf0qlSn+d4aEWLValryKb8ZFcYRR84Q0N6YsgfK0g==}
+  /pnpm/6.32.3:
+    resolution: {integrity: sha512-lMQgROSwiUA+kt+suAPinjNwqevS1Iz0rppWNZ3jHhzeP07RFRQ+Ksai2OlAnM+YjlbHT9niQ4ICBVSqcdQ04w==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: false
