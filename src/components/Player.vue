@@ -65,20 +65,20 @@
           <button-icon
             v-show="!player.isPersonalFM"
             :title="$t('player.previous')"
-            @click.native="player.playPrevTrack()"
+            @click.native="playPrevTrack()"
             ><i-fluent-previous-16-filled
           /></button-icon>
           <button-icon
             v-show="player.isPersonalFM"
             title="不喜欢"
-            @click.native="player.moveToFMTrash()"
+            @click.native="moveToFMTrash()"
           >
             <i-fa:thumbs-down id="thumbs-down" />
           </button-icon>
           <button-icon
             class="play"
             :title="$t(player.playing ? 'player.pause' : 'player.play')"
-            @click.native="player.playOrPause()"
+            @click.native="playOrPause"
           >
             <i-fluent-play-12-filled v-if="!player.playing" />
             <i-fluent-pause-12-filled v-else />
@@ -96,7 +96,7 @@
             :title="$t('player.nextUp')"
             :class="{
               active: $route.name === 'next',
-              disabled: player.isPersonalFM,
+              disabled: isPersonalFM,
             }"
             @click.native="goToNextTracksPage"
             ><i-ic:twotone-queue-music
@@ -111,7 +111,7 @@
                 ? $t('player.repeatTrack')
                 : $t('player.repeat')
             "
-            @click.native="player.switchRepeatMode()"
+            @click.native="switchRepeatMode"
           >
             <i-my-repeat v-show="player.repeatMode !== 'one'" />
             <i-my-repeat1 v-show="player.repeatMode === 'one'" />
@@ -119,20 +119,20 @@
           <button-icon
             :class="{ active: player.shuffle, disabled: player.isPersonalFM }"
             :title="$t('player.shuffle')"
-            @click.native="player.switchShuffle()"
+            @click.native="switchShuffle"
             ><i-ps:random
           /></button-icon>
           <button-icon
             v-if="settings.enableReversedMode"
             :class="{ active: player.reversed, disabled: player.isPersonalFM }"
             :title="$t('player.reversed')"
-            @click.native="player.switchReversed()"
+            @click.native="switchReversed"
             ><i-ps:random
           /></button-icon>
           <div class="volume-control">
             <button-icon
               :title="$t('player.mute')"
-              @click.native="player.mute()"
+              @click.native="mute"
             >
               <i-fluent:speaker-24-filled v-show="volume > 0.5" />
               <i-fluent-speaker-mute-16-filled v-show="volume === 0" />
@@ -202,6 +202,12 @@ export default {
   methods: {
     ...mapMutations(['toggleLyrics']),
     ...mapActions(['showToast', 'likeATrack']),
+      playPrevTrack() {
+      this.player.playPrevTrack();
+    },
+    playOrPause() {
+      this.player.playOrPause();
+    },
     playNextTrack() {
       if (this.player.isPersonalFM) {
         this.player.playNextFMTrack()
@@ -226,6 +232,21 @@ export default {
     },
     goToList() {
       goToListSource()
+    },
+    moveToFMTrash() {
+      this.player.moveToFMTrash();
+    },
+    switchRepeatMode() {
+      this.player.switchRepeatMode();
+    },
+    switchShuffle() {
+      this.player.switchShuffle();
+    },
+    switchReversed() {
+      this.player.switchReversed();
+    },
+    mute() {
+      this.player.mute();
     },
     goToAlbum() {
       if (this.player.currentTrack.al.id === 0) return

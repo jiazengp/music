@@ -117,7 +117,7 @@
                     : $t('player.repeat')
                 "
                 :class="{ active: player.repeatMode !== 'off' }"
-                @click.native="player.switchRepeatMode()"
+                @click.native="switchRepeatMode"
               >
                 <i-my-repeat v-show="player.repeatMode !== 'one'" />
                 <i-my-repeat1 v-show="player.repeatMode === 'one'" />
@@ -126,21 +126,21 @@
                 <button-icon
                   v-show="!player.isPersonalFM"
                   :title="$t('player.previous')"
-                  @click.native="player.playPrevTrack()"
+                  @click.native="playPrevTrack"
                 >
                   <i-fluent-previous-16-filled />
                 </button-icon>
                 <button-icon
                   v-show="player.isPersonalFM"
                   title="不喜欢"
-                  @click.native="player.moveToFMTrash()"
+                  @click.native="moveToFMTrash"
                 >
                   ><i-fa:thumbs-down id="thumbs-down" />
                 </button-icon>
                 <button-icon
                   id="play"
                   :title="$t(player.playing ? 'player.pause' : 'player.play')"
-                  @click.native="player.playOrPause()"
+                  @click.native="playOrPause"
                 >
                   <i-fluent-play-12-filled v-if="!player.playing" />
                   <i-fluent-pause-12-filled v-else />
@@ -158,7 +158,7 @@
                 v-show="!player.isPersonalFM"
                 :title="$t('player.shuffle')"
                 :class="{ active: player.shuffle }"
-                @click.native="player.switchShuffle()"
+                @click.native="switchShuffle"
               >
                 <i-ps:random />
               </button-icon>
@@ -322,6 +322,12 @@ export default {
   methods: {
     ...mapMutations(['toggleLyrics']),
     ...mapActions(['likeATrack']),
+     playPrevTrack() {
+      this.player.playPrevTrack();
+    },
+    playOrPause() {
+      this.player.playOrPause();
+    },
     playNextTrack() {
       if (this.player.isPersonalFM) {
         this.player.playNextFMTrack()
@@ -406,6 +412,12 @@ export default {
     },
     moveToFMTrash() {
       this.player.moveToFMTrash()
+    },
+    switchRepeatMode() {
+      this.player.switchRepeatMode();
+    },
+    switchShuffle() {
+      this.player.switchShuffle();
     },
     getCoverColor() {
       if (this.settings.lyricsBackground !== true) return
