@@ -2,17 +2,8 @@ import axios from 'axios';
 import { getCookie, doLogout } from '@/utils/auth';
 import router from '@/router';
 
-let baseURL = '';
-// Web 和 Electron 跑在不同端口避免同时启动时冲突
-if (process.env.IS_ELECTRON) {
-  if (process.env.NODE_ENV === 'production') {
-    baseURL = process.env.VUE_APP_ELECTRON_API_URL;
-  } else {
-    baseURL = process.env.VUE_APP_ELECTRON_API_URL_DEV;
-  }
-} else {
-  baseURL = process.env.VUE_APP_NETEASE_API_URL;
-}
+const baseURL = import.meta.env.VITE_APP_NETEASE_API_URL;
+
 
 const service = axios.create({
   baseURL,
@@ -23,14 +14,14 @@ const service = axios.create({
 service.interceptors.request.use(function (config) {
   if (!config.params) config.params = {};
   if (baseURL.length) {
-    if (baseURL[0] !== '/' && !process.env.IS_ELECTRON) {
+    if (baseURL[0] !== '/') {
       config.params.cookie = `MUSIC_U=${getCookie('MUSIC_U')};`;
     }
   } else {
     console.error("You must set up the baseURL in the service's config");
   }
 
-  if (!process.env.IS_ELECTRON && !config.url.includes('/login')) {
+  if (!config.url.includes('/login')) {
     config.params.realIP = '211.161.244.70';
   }
 
@@ -50,7 +41,8 @@ service.interceptors.response.use(
   async error => {
     /** @type {import('axios').AxiosResponse | null} */
     const response = error.response;
-    const data = response.data;
+    console.log(response)
+    const data = response.data || response;
 
     if (
       response &&
