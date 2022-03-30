@@ -11,7 +11,7 @@ import { isAccountLoggedIn } from '@/utils/auth'
 import { trackUpdateNowPlaying, trackScrobble } from '@/api/lastfm'
 import { isCreateTray } from '@/utils/platform'
 
-const PLAY_PAUSE_FADE_DURATION = 200;
+const PLAY_PAUSE_FADE_DURATION = 400;
 const ipcRenderer = null
 const delay = (ms) =>
   new Promise((resolve) => {

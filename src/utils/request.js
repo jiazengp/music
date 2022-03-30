@@ -4,7 +4,6 @@ import router from '@/router';
 
 const baseURL = import.meta.env.VITE_APP_NETEASE_API_URL;
 
-
 const service = axios.create({
   baseURL,
   withCredentials: true,
@@ -40,9 +39,9 @@ service.interceptors.response.use(
   },
   async error => {
     /** @type {import('axios').AxiosResponse | null} */
+    console.error(error)
     const response = error.response;
-    console.log(response)
-    const data = response.data || response;
+    const data = response.data;
 
     if (
       response &&
