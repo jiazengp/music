@@ -1,6 +1,5 @@
 <template>
   <div id="app" :class="{ 'user-select-none': userSelectNone }">
-    <ReloadPrompt />
     <Scrollbar v-show="!showLyrics" ref="scrollbar" />
     <Navbar v-show="showNavbar" ref="navbar" />
     <main
