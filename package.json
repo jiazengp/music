@@ -44,7 +44,7 @@
     "@commitlint/config-conventional": "16.0.0",
     "@iconify-json/codicon": "1.0.13",
     "@iconify-json/emojione": "1.0.2",
-    "@iconify-json/fluent": "1.0.15",
+    "@iconify-json/fluent": "1.1.7",
     "@sentry/tracing": "^6.19.2",
     "@sentry/vue": "^6.19.2",
     "@types/nprogress": "0.2.0",
