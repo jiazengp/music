@@ -121,7 +121,7 @@
     "@iconify-json/ps": "1.0.1",
     "@types/node": "17.0.13",
     "husky": "7.0.4",
-    "sass": "1.49.0"
+    "sass": "1.51.0"
   },
   "engines": {
     "node": ">=12.0.0"
