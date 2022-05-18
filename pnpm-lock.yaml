@@ -20,7 +20,7 @@ specifiers:
   '@types/qs': 6.9.7
   '@unblockneteasemusic/server': 0.27.0-rc.4
   '@vscode/codicons': 0.0.27
-  '@vue/composition-api': 1.4.5
+  '@vue/composition-api': 1.6.1
   '@vue/runtime-dom': 3.2.33
   '@vueuse/core': 7.5.5
   NeteaseCloudMusicApi: link:netease_api
@@ -95,9 +95,9 @@ dependencies:
   '@types/qs': 6.9.7
   '@unblockneteasemusic/server': 0.27.0-rc.4
   '@vscode/codicons': 0.0.27
-  '@vue/composition-api': 1.4.5_vue@2.6.14
+  '@vue/composition-api': 1.6.1_vue@2.6.14
   '@vue/runtime-dom': 3.2.33
-  '@vueuse/core': 7.5.5_d79e7923db889d2b9259f6258b44de53
+  '@vueuse/core': 7.5.5_56f4c8ef45bd21a4065070383eea8fef
   NeteaseCloudMusicApi: link:netease_api
   axios: 0.26.1
   change-case: 4.1.2
@@ -139,14 +139,14 @@ dependencies:
   typescript: 4.5.5
   unplugin-icons: 0.13.0_e3c37c0cfaae1b9f72ab6085139b0afb
   unplugin-vue-components: 0.17.15_vite@2.7.13+vue@2.6.14
-  unplugin-vue2-script-setup: 0.9.1_5e8769a3a076ecc26aba24331a1f29bd
+  unplugin-vue2-script-setup: 0.9.1_6eda00aa29ae4e573b22bde677192063
   vite: 2.7.13_sass@1.49.0
   vite-plugin-mkcert: 1.5.2
   vite-plugin-pwa: 0.11.13_vite@2.7.13
   vite-plugin-vue2: 1.9.3_a9aa0753426b7db73df200b4589419ff
   vue: 2.6.14
   vue-clipboard2: 0.3.3
-  vue-demi: 0.12.1_d79e7923db889d2b9259f6258b44de53
+  vue-demi: 0.12.1_56f4c8ef45bd21a4065070383eea8fef
   vue-gtag: 1.16.1_vue@2.6.14
   vue-i18n: 8.27.0
   vue-lazyload: 1.3.3
@@ -2366,8 +2366,8 @@ packages:
       - whiskers
     dev: false
 
-  /@vue/composition-api/1.4.5_vue@2.6.14:
-    resolution: {integrity: sha512-2Esgcc0EGBqyck4b/yrP2VnGmMr6cPYAE4nF3StIzP8+umNAbRZqBJDc6AhE58whPRt3lHAPf83eppgW7a2dUg==}
+  /@vue/composition-api/1.6.1_vue@2.6.14:
+    resolution: {integrity: sha512-QNeduwRllSRzo9ZOzZjtzCeGUx0sEfrEDHmQlf+goLw4calBPBbpYWf8ueh6VSBrWJGQRJPsRPmTVEeTKRKBMg==}
     peerDependencies:
       vue: '>= 2.5 < 3'
     dependencies:
@@ -2413,7 +2413,7 @@ packages:
     resolution: {integrity: sha512-UBc1Pg1T3yZ97vsA2ueER0F6GbJebLHYlEi4ou1H5YL4KWvMOOWwpYo9/QpWq93wxKG6Wo13IY74Hcn/f7c7Bg==}
     dev: false
 
-  /@vueuse/core/7.5.5_d79e7923db889d2b9259f6258b44de53:
+  /@vueuse/core/7.5.5_56f4c8ef45bd21a4065070383eea8fef:
     resolution: {integrity: sha512-RBDqmIoGfak4h3xdXa/Av+ibkb8NY044wEy6+PG2FAWNaID8/FkqmSFjbxogrbmpSX1yZ1PBHrM8DUp/FrIpbg==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
@@ -2424,13 +2424,13 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vue/composition-api': 1.4.5_vue@2.6.14
-      '@vueuse/shared': 7.5.5_d79e7923db889d2b9259f6258b44de53
+      '@vue/composition-api': 1.6.1_vue@2.6.14
+      '@vueuse/shared': 7.5.5_56f4c8ef45bd21a4065070383eea8fef
       vue: 2.6.14
-      vue-demi: 0.12.1_d79e7923db889d2b9259f6258b44de53
+      vue-demi: 0.12.1_56f4c8ef45bd21a4065070383eea8fef
     dev: false
 
-  /@vueuse/shared/7.5.5_d79e7923db889d2b9259f6258b44de53:
+  /@vueuse/shared/7.5.5_56f4c8ef45bd21a4065070383eea8fef:
     resolution: {integrity: sha512-mzzTsotHQRPnPAChy8iCv6ek/90CKYhAFyMRgNsMxpT0afZJkbMO/X0OaOu/1NuGbgb8UVjlsWKmCUgKTOF5hA==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
@@ -2441,9 +2441,9 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vue/composition-api': 1.4.5_vue@2.6.14
+      '@vue/composition-api': 1.6.1_vue@2.6.14
       vue: 2.6.14
-      vue-demi: 0.12.1_d79e7923db889d2b9259f6258b44de53
+      vue-demi: 0.12.1_56f4c8ef45bd21a4065070383eea8fef
     dev: false
 
   /JSONStream/1.3.5:
@@ -9038,7 +9038,7 @@ packages:
       - webpack
     dev: false
 
-  /unplugin-vue2-script-setup/0.9.1_5e8769a3a076ecc26aba24331a1f29bd:
+  /unplugin-vue2-script-setup/0.9.1_6eda00aa29ae4e573b22bde677192063:
     resolution: {integrity: sha512-1+I300JJ8SBajD3EYQI4Ee7RReLvPS3cL5Rio12e54Vv6e4cd8rPwTNogpskHtt5DNdYA31Cr+DGAf2MmPpsFw==}
     peerDependencies:
       '@vue/composition-api': ^1.4.3
@@ -9057,7 +9057,7 @@ packages:
       '@rollup/pluginutils': 4.2.0
       '@vue/compiler-core': 3.2.31
       '@vue/compiler-dom': 3.2.31
-      '@vue/composition-api': 1.4.5_vue@2.6.14
+      '@vue/composition-api': 1.6.1_vue@2.6.14
       '@vue/reactivity-transform': 3.2.31
       '@vue/runtime-dom': 3.2.33
       '@vue/shared': 3.2.31
@@ -9388,7 +9388,7 @@ packages:
       clipboard: 2.0.10
     dev: false
 
-  /vue-demi/0.12.1_d79e7923db889d2b9259f6258b44de53:
+  /vue-demi/0.12.1_56f4c8ef45bd21a4065070383eea8fef:
     resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
     engines: {node: '>=12'}
     hasBin: true
@@ -9400,7 +9400,7 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
-      '@vue/composition-api': 1.4.5_vue@2.6.14
+      '@vue/composition-api': 1.6.1_vue@2.6.14
       vue: 2.6.14
     dev: false
 
