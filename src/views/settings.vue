@@ -89,9 +89,10 @@
             <option value="320000">
               {{ $t('settings.musicQuality.high') }} - 320Kbps
             </option>
-            <option value="999000">
+            <option value="flac">
               {{ $t('settings.musicQuality.lossless') }} - FLAC
             </option>
+            <option value="999000">Hi-Res</option>
           </select>
         </div>
       </div>
@@ -681,8 +682,7 @@ export default {
     },
     musicQuality: {
       get() {
-        if (this.settings.musicQuality === undefined) return 320000
-        return this.settings.musicQuality
+        return this.settings.musicQuality ?? 320000;
       },
       set(value) {
         if (value === this.settings.musicQuality) return
