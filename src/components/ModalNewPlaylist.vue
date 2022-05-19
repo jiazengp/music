@@ -142,6 +142,7 @@ export default {
       align-items: center;
       label {
         font-size: 12px;
+        user-select: none;
       }
     }
   }

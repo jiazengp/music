@@ -478,6 +478,11 @@ export default class {
       artist: artists.join(','),
       album: track.al.name,
       artwork: [
+         {
+          src: track.al.picUrl + '?param=224y224',
+          type: 'image/jpg',
+          sizes: '224x224',
+        },
         {
           src: track.al.picUrl + '?param=512y512',
           type: 'image/jpg',
