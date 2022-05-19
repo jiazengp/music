@@ -1,7 +1,7 @@
 <template>
   <div v-show="show" ref="library">
     <h1>
-      <img class="avatar" :src="data.user.avatarUrl | resizeImage" />{{
+      <img loading="lazy" class="avatar" :src="data.user.avatarUrl | resizeImage" />{{
         data.user.nickname
       }}{{ $t('library.sLibrary') }}
     </h1>

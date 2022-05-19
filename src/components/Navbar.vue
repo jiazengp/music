@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <img class="avatar" :src="avatarUrl" @click="showUserProfileMenu" />
+        <img loading="lazy" class="avatar" :src="avatarUrl" @click="showUserProfileMenu" />
       </div>
     </nav>
 

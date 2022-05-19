@@ -1,7 +1,7 @@
 <template>
   <div class="fm" :style="{ background }" data-theme="dark">
-    <img :src="nextTrackCover" style="display: none" />
-    <img
+    <img loading="lazy" :src="nextTrackCover" style="display: none" />
+    <img loading="lazy"
       class="cover"
       :src="track.album && track.album.picUrl | resizeImage(512)"
       @click="goToAlbum"

@@ -1,8 +1,8 @@
 <template>
   <div class="lastfm-callback">
     <div class="section-1">
-      <img src="../../public/img/logos/logo.png" />
-      <img src="../../public/img/logos/lastfm.png" />
+      <img loading="lazy" src="../../public/img/logos/logo.png" />
+      <img loading="lazy" src="../../public/img/logos/lastfm.png" />
     </div>
     <div class="message">{{ message }}</div>
     <button v-show="done" @click="close">完成</button>

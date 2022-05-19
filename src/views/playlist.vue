@@ -116,7 +116,7 @@
         :class="specialPlaylistInfo.gradient"
         @click.right="openMenu"
       >
-        <!-- <img :src="playlist.coverImgUrl | resizeImage" /> -->
+        <!-- <img loading="lazy" :src="playlist.coverImgUrl | resizeImage" /> -->
         {{ specialPlaylistInfo.name }}
       </div>
       <div class="subtitle">
@@ -155,7 +155,7 @@
 
     <div v-if="isLikeSongsPage" class="user-info">
       <h1>
-        <img class="avatar" :src="data.user.avatarUrl | resizeImage" />{{
+        <img loading="lazy" class="avatar" :src="data.user.avatarUrl | resizeImage" />{{
           data.user.nickname
         }}{{ $t('library.sLikedSongs') }}
       </h1>

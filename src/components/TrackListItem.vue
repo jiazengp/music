@@ -7,7 +7,7 @@
     @mouseover="hover = true"
     @mouseleave="hover = false"
   >
-    <img
+    <img loading="lazy"
       v-if="!isAlbum"
       :src="imgUrl"
       :class="{ hover: focus }"

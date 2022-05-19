@@ -7,7 +7,7 @@
         @mouseleave="hoverVideoID = 0"
         @click="goToMv(getID(mv))"
       >
-        <img :src="getUrl(mv)" />
+        <img loading="lazy" :src="getUrl(mv)" />
         <transition name="fade">
           <div
             v-show="hoverVideoID === getID(mv)"

@@ -17,7 +17,7 @@
           <i-fluent-play-12-filled />
         </button>
       </div>
-      <img :src="imageUrl" :style="imageStyles" />
+      <img loading="lazy" :src="imageUrl" :style="imageStyles" />
       <transition v-if="coverHover || alwaysShowShadow" name="fade">
         <div
           v-show="focus || alwaysShowShadow"

@@ -2,7 +2,7 @@
   <div v-show="show" class="artist-page">
     <div class="artist-info">
       <div class="head">
-        <img :src="artist.img1v1Url | resizeImage(1024)" />
+        <img loading="lazy" :src="artist.img1v1Url | resizeImage(1024)" />
       </div>
       <div>
         <div class="name">{{ artist.name }}</div>
@@ -84,7 +84,7 @@
             @mouseleave="mvHover = false"
             @click="goToMv(latestMV.id)"
           >
-            <img :src="latestMV.coverUrl" />
+            <img loading="lazy" :src="latestMV.coverUrl" />
             <transition name="fade">
               <div
                 v-show="mvHover"

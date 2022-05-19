@@ -25,7 +25,7 @@
     <div class="controls">
       <div class="playing">
         <div class="container" @click.stop>
-          <img
+          <img loading="lazy"
             :src="currentTrack.al && currentTrack.al.picUrl | resizeImage(224)"
             @click="goToAlbum"
           />

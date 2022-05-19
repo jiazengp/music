@@ -7,9 +7,9 @@
       你可以通过下列的方法来支持作者的开发与维护：
     </p>
     <div class="container-pay">
-      <img src="../../public/img/sponsor/qq.jpg" alt="QQ Pay" />
-      <img src="../../public/img/sponsor/wx.jpg" alt="WeChat Pay" />
-      <img src="../../public/img/sponsor/zfb.jpg" alt="Ali Pay" />
+      <img loading="lazy" src="../../public/img/sponsor/qq.jpg" alt="QQ Pay" />
+      <img loading="lazy" src="../../public/img/sponsor/wx.jpg" alt="WeChat Pay" />
+      <img loading="lazy" src="../../public/img/sponsor/zfb.jpg" alt="Ali Pay" />
     </div>
     <p>不论多少金额，都非常感谢你的支持！(^_^)</p>
     <ButtonTwoTone

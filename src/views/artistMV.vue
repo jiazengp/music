@@ -1,7 +1,7 @@
 <template>
   <div v-show="show">
     <h1>
-      <img class="avatar" :src="artist.img1v1Url | resizeImage(1024)" />{{
+      <img loading="lazy" class="avatar" :src="artist.img1v1Url | resizeImage(1024)" />{{
         artist.name
       }}'s Music Videos
     </h1>
