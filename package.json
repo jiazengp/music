@@ -97,7 +97,7 @@
     "unplugin-icons": "0.13.0",
     "unplugin-vue-components": "0.17.15",
     "unplugin-vue2-script-setup": "0.9.1",
-    "vite": "2.7.13",
+    "vite": "2.9.9",
     "vite-plugin-mkcert": "1.5.2",
     "vite-plugin-pwa": "0.11.13",
     "vite-plugin-vue2": "1.9.3",
