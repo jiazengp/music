@@ -18,7 +18,7 @@ specifiers:
   '@types/nprogress': 0.2.0
   '@types/qrcode': 1.4.2
   '@types/qs': 6.9.7
-  '@unblockneteasemusic/server': 0.27.0-rc.4
+  '@unblockneteasemusic/server': 0.27.0-rc.6
   '@vscode/codicons': 0.0.27
   '@vue/composition-api': 1.4.5
   '@vue/runtime-dom': 3.2.33
@@ -93,7 +93,7 @@ dependencies:
   '@types/nprogress': 0.2.0
   '@types/qrcode': 1.4.2
   '@types/qs': 6.9.7
-  '@unblockneteasemusic/server': 0.27.0-rc.4
+  '@unblockneteasemusic/server': 0.27.0-rc.6
   '@vscode/codicons': 0.0.27
   '@vue/composition-api': 1.4.5_vue@2.6.14
   '@vue/runtime-dom': 3.2.33
@@ -2172,8 +2172,8 @@ packages:
     dev: false
     optional: true
 
-  /@unblockneteasemusic/server/0.27.0-rc.4:
-    resolution: {integrity: sha512-fqFStb71/N9Ek9VoYRF4ConMc1A7LJBBCzOz2Haq3UnXi4W7tlvWb038ih/qh7wH03/qJGLDxxD3oThJQHJFZQ==}
+  /@unblockneteasemusic/server/0.27.0-rc.6:
+    resolution: {integrity: sha512-H/dtVM5tmvuYeBhqmLrUo2sbGZKSN1xtZs4Km0rOqsiKkX/vMAlF1gmy61Wnc0hLjL1orY6eHnvRdZV/2hWnvQ==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:

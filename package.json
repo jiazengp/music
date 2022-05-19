@@ -50,7 +50,7 @@
     "@types/nprogress": "0.2.0",
     "@types/qrcode": "1.4.2",
     "@types/qs": "6.9.7",
-    "@unblockneteasemusic/server": "0.27.0-rc.4",
+    "@unblockneteasemusic/server": "0.27.0-rc.6",
     "@vscode/codicons": "0.0.27",
     "@vue/composition-api": "1.4.5",
     "@vue/runtime-dom": "3.2.33",
