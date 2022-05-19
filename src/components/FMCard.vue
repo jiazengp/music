@@ -36,7 +36,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import * as Vibrant from 'node-vibrant'
+import * as Vibrant from 'node-vibrant/dist/vibrant.worker.min.js'
 import Color from 'color'
 
 export default {
