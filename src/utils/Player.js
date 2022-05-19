@@ -7,7 +7,7 @@ import { getMP3, getTrackDetail, scrobble } from '@/api/track';
 import store from '@/store';
 import { isAccountLoggedIn } from '@/utils/auth';
 import { cacheTrackSource, getTrackSource } from '@/utils/db';
-import { isCreateMpris, isCreateTray } from '@/utils/platlform';
+import { isCreateTray } from '@/utils/platlform';
 import { Howl, Howler } from 'howler';
 import shuffle from 'lodash/shuffle';
 
