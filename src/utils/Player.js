@@ -1,15 +1,15 @@
-import { getTrackDetail, scrobble, getMP3 } from '@/api/track'
-import shuffle from 'lodash/shuffle'
-import { Howler, Howl } from 'howler'
-import { cacheTrackSource, getTrackSource } from '@/utils/db'
-import { getAlbum } from '@/api/album'
-import { getPlaylistDetail, intelligencePlaylist } from '@/api/playlist'
-import { getArtist } from '@/api/artist'
-import { personalFM, fmTrash } from '@/api/others'
-import store from '@/store'
-import { isAccountLoggedIn } from '@/utils/auth'
-import { trackUpdateNowPlaying, trackScrobble } from '@/api/lastfm'
-import { isCreateTray } from '@/utils/platform'
+import { getAlbum } from '@/api/album';
+import { getArtist } from '@/api/artist';
+import { trackScrobble, trackUpdateNowPlaying } from '@/api/lastfm';
+import { fmTrash, personalFM } from '@/api/others';
+import { getPlaylistDetail, intelligencePlaylist } from '@/api/playlist';
+import { getMP3, getTrackDetail, scrobble } from '@/api/track';
+import store from '@/store';
+import { isAccountLoggedIn } from '@/utils/auth';
+import { cacheTrackSource, getTrackSource } from '@/utils/db';
+import { isCreateMpris, isCreateTray } from '@/utils/platlform';
+import { Howl, Howler } from 'howler';
+import shuffle from 'lodash/shuffle';
 
 const PLAY_PAUSE_FADE_DURATION = 400;
 const ipcRenderer = null
@@ -187,8 +187,6 @@ export default class {
 
   _init() {
     this._loadSelfFromLocalStorage()
-    Howler.autoUnlock = false
-    Howler.usingWebAudio = true
     Howler.volume(this.volume)
 
     if (this._enabled) {
@@ -305,6 +303,7 @@ export default class {
     this._howler = new Howl({
       src: [source],
       html5: true,
+      preload: true,
       format: ['mp3', 'flac'],
       onend: () => {
         this._nextTrackCallback()
