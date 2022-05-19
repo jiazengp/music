@@ -26,7 +26,7 @@ specifiers:
   NeteaseCloudMusicApi: link:netease_api
   axios: 0.26.1
   change-case: 4.1.2
-  cli-color: 2.0.1
+  cli-color: 2.0.2
   color: 4.2.1
   conventional-changelog-cli: 2.2.2
   core-js: 3.20.3
@@ -101,7 +101,7 @@ dependencies:
   NeteaseCloudMusicApi: link:netease_api
   axios: 0.26.1
   change-case: 4.1.2
-  cli-color: 2.0.1
+  cli-color: 2.0.2
   color: 4.2.1
   conventional-changelog-cli: 2.2.2
   core-js: 3.20.3
@@ -3110,8 +3110,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /cli-color/2.0.1:
-    resolution: {integrity: sha512-eBbxZF6fqPUNnf7CLAFOersUnyYzv83tHFLSlts+OAHsNendaqv2tHCq+/MO+b3Y+9JeoUlIvobyxG/Z8GNeOg==}
+  /cli-color/2.0.2:
+    resolution: {integrity: sha512-g4JYjrTW9MGtCziFNjkqp3IMpGhnJyeB0lOtRPjQkYhXzKYr6tYnXKyEVnMzITxhpbahsEW9KsxOYIDKwcsIBw==}
     engines: {node: '>=0.10'}
     dependencies:
       d: 1.0.1

@@ -58,7 +58,7 @@
     "NeteaseCloudMusicApi": "link:netease_api",
     "axios": "0.26.1",
     "change-case": "4.1.2",
-    "cli-color": "2.0.1",
+    "cli-color": "2.0.2",
     "color": "4.2.1",
     "conventional-changelog-cli": "2.2.2",
     "core-js": "3.20.3",
