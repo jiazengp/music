@@ -30,13 +30,13 @@ function setTitle(track) {
     ? `${track.name} · ${track.ar[0].name} - Music`
     : 'Music'
   if (isCreateTray) {
-    ipcRenderer.send('updateTrayTooltip', document.title)
+    ipcRenderer?.send('updateTrayTooltip', document.title)
   }
 }
 
 function setTrayLikeState(isLiked) {
   if (isCreateTray) {
-    ipcRenderer.send('updateTrayLikeState', isLiked)
+    ipcRenderer?.send('updateTrayLikeState', isLiked)
   }
 }
 
@@ -215,7 +215,7 @@ export default class {
   _setPlaying(isPlaying) {
     this._playing = isPlaying
     if (isCreateTray) {
-      ipcRenderer.send('updateTrayPlayState', this._playing)
+      ipcRenderer?.send('updateTrayPlayState', this._playing)
     }
   }
   _setIntervals() {
@@ -540,13 +540,13 @@ export default class {
     }
     let copyTrack = { ...track }
     copyTrack.dt -= seekTime * 1000
-    ipcRenderer.send('playDiscordPresence', copyTrack)
+    ipcRenderer?.send('playDiscordPresence', copyTrack)
   }
   _pauseDiscordPresence(track) {
     if (store.state.settings.enableDiscordRichPresence === false) {
       return null
     }
-    ipcRenderer.send('pauseDiscordPresence', track)
+    ipcRenderer?.send('pauseDiscordPresence', track)
   }
 
   currentTrackID() {
