@@ -96,7 +96,7 @@
             :title="$t('player.nextUp')"
             :class="{
               active: $route.name === 'next',
-              disabled: isPersonalFM,
+              disabled: player.isPersonalFM,
             }"
             @click.native="goToNextTracksPage"
             ><i-ic:twotone-queue-music
