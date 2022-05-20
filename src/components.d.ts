@@ -44,7 +44,6 @@ declare module 'vue' {
     MvRow: typeof import('./components/MvRow.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
     Player: typeof import('./components/Player.vue')['default']
-    ReloadPrompt: typeof import('./components/ReloadPrompt.vue')['default']
     Scrollbar: typeof import('./components/Scrollbar.vue')['default']
     Separator: typeof import('./components/Separator.vue')['default']
     Toast: typeof import('./components/Toast.vue')['default']

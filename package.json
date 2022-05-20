@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "preview-https": "serve dist",
     "start": "nodemon --config nodemon.json",
-    "netease_api:install": "cd ./netease_api && npm install",
+    "netease_api:run": "npx NeteaseCloudMusicApi",
     "envinfo": "npx envinfo --npmPackages --system --browsers --binaries --duplicates"
   },
   "lint-staged": {
@@ -45,8 +45,8 @@
     "@iconify-json/codicon": "1.0.13",
     "@iconify-json/emojione": "1.0.2",
     "@iconify-json/fluent": "1.0.15",
-    "@sentry/tracing": "^6.19.2",
-    "@sentry/vue": "^6.19.2",
+    "@sentry/tracing": "^6.19.7",
+    "@sentry/vue": "^6.19.7",
     "@types/nprogress": "0.2.0",
     "@types/qrcode": "1.4.2",
     "@types/qs": "6.9.7",
@@ -55,7 +55,7 @@
     "@vue/composition-api": "1.4.5",
     "@vue/runtime-dom": "3.2.33",
     "@vueuse/core": "7.5.5",
-    "NeteaseCloudMusicApi": "link:netease_api",
+    "NeteaseCloudMusicApi": "^4.5.14",
     "axios": "0.26.1",
     "change-case": "4.1.2",
     "cli-color": "2.0.2",
@@ -124,6 +124,6 @@
     "sass": "1.51.0"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   }
 }

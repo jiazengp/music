@@ -1,5 +1,10 @@
 {
-  "cSpell.words": ["Vite","netease"],
+  "cSpell.words": [
+    "envinfo",
+    "netease",
+    "pnpm",
+    "Vite"
+  ],
   "i18n-ally.localesPaths": [
     "src/locale",
     "src/locale/lang"
