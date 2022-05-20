@@ -40,8 +40,8 @@
     "not dead"
   ],
   "dependencies": {
-    "@commitlint/cli": "16.1.0",
-    "@commitlint/config-conventional": "16.0.0",
+    "@commitlint/cli": "16.3.0",
+    "@commitlint/config-conventional": "16.2.4",
     "@iconify-json/codicon": "1.0.13",
     "@iconify-json/emojione": "1.0.2",
     "@iconify-json/fluent": "1.0.15",
