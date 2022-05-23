@@ -455,17 +455,14 @@ export default {
   display: flex;
   clip: rect(auto, auto, auto, auto);
 }
-
 .lyrics-background {
   --contrast-lyrics-background: 75%;
   --brightness-lyrics-background: 150%;
 }
-
 [data-theme='dark'] .lyrics-background {
   --contrast-lyrics-background: 125%;
   --brightness-lyrics-background: 50%;
 }
-
 .lyrics-background {
   filter: blur(50px) contrast(var(--contrast-lyrics-background))
     brightness(var(--brightness-lyrics-background));
@@ -481,13 +478,11 @@ export default {
     position: absolute;
     background-size: cover;
   }
-
   .top-right {
     right: 0;
     top: 0;
     mix-blend-mode: luminosity;
   }
-
   .bottom-left {
     left: 0;
     bottom: 0;
@@ -495,11 +490,9 @@ export default {
     animation-delay: 10s;
   }
 }
-
 .dynamic-background > div {
   animation: rotate 150s linear infinite;
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -508,13 +501,11 @@ export default {
     transform: rotate(360deg);
   }
 }
-
 .gradient-background {
   position: absolute;
   height: 100vh;
   width: 100vw;
 }
-
 .left-side {
   flex: 1;
   display: flex;
@@ -523,14 +514,11 @@ export default {
   margin-top: 24px;
   align-items: center;
   transition: all 0.5s;
-
   z-index: 1;
-
   .controls {
     max-width: 54vh;
     margin-top: 24px;
     color: var(--color-text);
-
     .title {
       margin-top: 8px;
       font-size: 1.4rem;
@@ -541,7 +529,6 @@ export default {
       -webkit-line-clamp: 1;
       overflow: hidden;
     }
-
     .subtitle {
       margin-top: 4px;
       font-size: 1rem;
@@ -551,80 +538,65 @@ export default {
       -webkit-line-clamp: 1;
       overflow: hidden;
     }
-
     .top-part {
       display: flex;
       justify-content: space-between;
-
       .buttons {
         display: flex;
         align-items: center;
-
         button {
           margin: 0 0 0 4px;
         }
-
         .svg-icon {
           height: 18px;
           width: 18px;
         }
       }
     }
-
     .progress-bar {
       margin-top: 22px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       .slider {
         width: 100%;
         flex-grow: grow;
         padding: 0 10px;
       }
-
       span {
         font-size: 15px;
         opacity: 0.58;
         min-width: 32px;
       }
     }
-
     .media-controls {
       display: flex;
       justify-content: center;
       margin-top: 18px;
       align-items: center;
-
       button {
         margin: 0;
       }
-
       .svg-icon {
         opacity: 0.38;
         height: 14px;
         width: 14px;
       }
-
       .active .svg-icon {
         opacity: 0.88;
       }
-
       .middle {
         padding: 0 16px;
         display: flex;
         align-items: center;
-
         button {
           margin: 0 8px;
         }
-
         button#play .svg-icon {
           height: 28px;
           width: 28px;
           padding: 2px;
         }
-
         .svg-icon {
           opacity: 0.88;
           height: 22px;
@@ -634,14 +606,11 @@ export default {
     }
   }
 }
-
 .cover {
   position: relative;
-
   .cover-container {
     position: relative;
   }
-
   img {
     border-radius: 0.75em;
     width: 54vh;
@@ -649,7 +618,6 @@ export default {
     user-select: none;
     object-fit: cover;
   }
-
   .shadow {
     position: absolute;
     top: 12px;
@@ -662,14 +630,12 @@ export default {
     border-radius: 0.75em;
   }
 }
-
 .right-side {
   flex: 1;
   font-weight: 600;
   color: var(--color-text);
   margin-right: 24px;
   z-index: 0;
-
   .lyrics-container {
     height: 100%;
     display: flex;
@@ -679,13 +645,11 @@ export default {
     overflow-y: auto;
     transition: 0.5s;
     scrollbar-width: none; // firefox
-
     .line {
       margin: 2px 0;
       padding: 12px 18px;
       transition: 0.5s;
       border-radius: 12px;
-
       &:hover {
         background: var(--color-secondary-bg-for-transparent);
       }
@@ -705,41 +669,33 @@ export default {
           font-size: 0.925em;
         }
     }
-
     .line#line-1:hover {
       background: unset;
     }
-
     .translation {
       margin-top: 0.1em;
     }
-
     .highlight div.content {
       transform: scale(1);
       span {
         opacity: 0.98;
         display: inline-block;
       }
-
       span.translation {
         opacity: 0.65;
       }
     }
   }
-
   ::-webkit-scrollbar {
     display: none;
   }
-
   .lyrics-container .line:first-child {
     margin-top: 50vh;
   }
-
   .lyrics-container .line:last-child {
     margin-bottom: calc(50vh - 128px);
   }
 }
-
 .close-button {
   position: fixed;
   top: 24px;
@@ -754,20 +710,17 @@ export default {
   opacity: 0.28;
   transition: 0.2s;
   -webkit-app-region: no-drag;
-
   .svg-icon {
     color: var(--color-text);
     padding-top: 5px;
     height: 22px;
     width: 22px;
   }
-
   &:hover {
     background: var(--color-secondary-bg-for-transparent);
     opacity: 0.88;
   }
 }
-
 .lyrics-page.no-lyric {
   .left-side {
     transition: all 0.5s;
@@ -775,7 +728,6 @@ export default {
     margin-right: 0;
   }
 }
-
 @media (max-aspect-ratio: 10/9) {
   .left-side {
     display: none;
@@ -784,30 +736,24 @@ export default {
     max-width: 100%;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .right-side .lyrics-container {
     max-width: 600px;
   }
 }
-
 .slide-up-enter-active,
 .slide-up-leave-active {
   transition: all 0.4s;
 }
-
 .slide-up-enter, .slide-up-leave-to /* .fade-leave-active below version 2.1.8 */ {
   transform: translateY(100%);
 }
-
 .slide-fade-enter-active {
   transition: all 0.5s ease;
 }
-
 .slide-fade-leave-active {
   transition: all 0.5s cubic-bezier(0.2, 0.2, 0, 1);
 }
-
 .slide-fade-enter,
 .slide-fade-leave-to {
   transform: translateX(27vh);
