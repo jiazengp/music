@@ -566,7 +566,7 @@ export default {
       span {
         font-size: 15px;
         opacity: 0.58;
-        min-width: 32px;
+        min-width: 28px;
       }
     }
     .media-controls {
@@ -657,7 +657,6 @@ export default {
         transform-origin: center left;
         transform: scale(0.95);
         transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        
         span {
           opacity: 0.28;
           cursor: default;
@@ -668,6 +667,7 @@ export default {
           opacity: 0.2;
           font-size: 0.925em;
         }
+      }
     }
     .line#line-1:hover {
       background: unset;
