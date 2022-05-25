@@ -24,7 +24,7 @@ specifiers:
   '@vue/runtime-dom': 3.2.33
   '@vueuse/core': 8.5.0
   NeteaseCloudMusicApi: ^4.5.14
-  axios: 0.26.1
+  axios: 0.27.2
   change-case: 4.1.2
   cli-color: 2.0.2
   color: 4.2.1
@@ -99,7 +99,7 @@ dependencies:
   '@vue/runtime-dom': 3.2.33
   '@vueuse/core': 8.5.0_26phsi63rcosxesz6ysywrg6km
   NeteaseCloudMusicApi: 4.5.14
-  axios: 0.26.1
+  axios: 0.27.2
   change-case: 4.1.2
   cli-color: 2.0.2
   color: 4.2.1
@@ -2783,6 +2783,10 @@ packages:
     resolution: {integrity: sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==}
     dev: false
 
+  /asynckit/0.4.0:
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+    dev: false
+
   /at-least-node/1.0.0:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
@@ -2815,10 +2819,11 @@ packages:
       - debug
     dev: false
 
-  /axios/0.26.1:
-    resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
+  /axios/0.27.2:
+    resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
     dependencies:
       follow-redirects: 1.15.0_debug@4.3.4
+      form-data: 4.0.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -3362,6 +3367,13 @@ packages:
 
   /colorette/2.0.16:
     resolution: {integrity: sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==}
+    dev: false
+
+  /combined-stream/1.0.8:
+    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
+    engines: {node: '>= 0.8'}
+    dependencies:
+      delayed-stream: 1.0.0
     dev: false
 
   /commander/2.20.3:
@@ -4356,6 +4368,11 @@ packages:
       vm2: 3.9.9
     dev: false
 
+  /delayed-stream/1.0.0:
+    resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=}
+    engines: {node: '>=0.4.0'}
+    dev: false
+
   /delegate/3.2.0:
     resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
     dev: false
@@ -5288,6 +5305,15 @@ packages:
   /for-in/1.0.2:
     resolution: {integrity: sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /form-data/4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
     dev: false
 
   /forwarded/0.2.0:
