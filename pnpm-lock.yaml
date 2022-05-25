@@ -52,7 +52,7 @@ specifiers:
   nodemon: 2.0.15
   nprogress: 0.2.0
   pac-proxy-agent: 4.1.0
-  plyr: 3.6.12
+  plyr: 3.7.2
   pnpm: 7.1.2
   prettier: 2.6.2
   qrcode: 1.5.0
@@ -126,7 +126,7 @@ dependencies:
   nodemon: 2.0.15
   nprogress: 0.2.0
   pac-proxy-agent: 4.1.0
-  plyr: 3.6.12
+  plyr: 3.7.2
   pnpm: 7.1.2
   prettier: 2.6.2
   qrcode: 1.5.0
@@ -4003,6 +4003,11 @@ packages:
     requiresBuild: true
     dev: false
 
+  /core-js/3.22.5:
+    resolution: {integrity: sha512-VP/xYuvJ0MJWRAobcmQ8F2H6Bsn+s7zqAAjFaHGBMc5AQm7zaelhD1LGduFn2EehEcQcU+br6t+fwbpQ5d1ZWA==}
+    requiresBuild: true
+    dev: false
+
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: false
@@ -7571,10 +7576,10 @@ packages:
       pngjs: 3.4.0
     dev: false
 
-  /plyr/3.6.12:
-    resolution: {integrity: sha512-42WhYpMS/FEyX2unSEvhYtj1RvJgWvOsjZQFDongOQHA4eVzsyr7b06bzVpinMAOVC9e5H7RCbK+6CCAFIl2VQ==}
+  /plyr/3.7.2:
+    resolution: {integrity: sha512-I0ZC/OI4oJ0iWG9s2rrnO0YFO6aLyrPiQBq9kum0FqITYljwTPBbYL3TZZu8UJQJUq7tUWN18Q7ACwNCkGKABQ==}
     dependencies:
-      core-js: 3.20.3
+      core-js: 3.22.5
       custom-event-polyfill: 1.0.7
       loadjs: 4.2.0
       rangetouch: 2.0.1
