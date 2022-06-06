@@ -61,7 +61,7 @@ specifiers:
   sass: 1.51.0
   screenfull: 6.0.1
   sort-package-json: 1.53.1
-  svg-sprite-loader: 5.2.1
+  svg-sprite-loader: 6.0.11
   tunnel: 0.0.6
   typescript: 4.5.5
   unplugin-icons: 0.13.0
@@ -134,7 +134,7 @@ dependencies:
   register-service-worker: 1.7.2
   screenfull: 6.0.1
   sort-package-json: 1.53.1
-  svg-sprite-loader: 5.2.1
+  svg-sprite-loader: 6.0.11
   tunnel: 0.0.6
   typescript: 4.5.5
   unplugin-icons: 0.13.0_dj3dtukdyynhbiqf2xbv2ocyei
@@ -8851,8 +8851,8 @@ packages:
       - supports-color
     dev: false
 
-  /svg-sprite-loader/5.2.1:
-    resolution: {integrity: sha512-n2IZc87rpOeXh+PQFksFMGCfMV/BT01YG+Dlbyjoh2Cz8BSTL5Vi/7KDr86Pt/u1NRDCVb3vY74BF5rKCmqbNA==}
+  /svg-sprite-loader/6.0.11:
+    resolution: {integrity: sha512-TedsTf8wsHH6HgdwKjUveDZRC6q5gPloYV8A8/zZaRWP929J7x6TzQ6MvZFl+YYDJuJ0Akyuu/vNVJ+fbPuYXg==}
     engines: {node: '>=6'}
     dependencies:
       bluebird: 3.7.2
