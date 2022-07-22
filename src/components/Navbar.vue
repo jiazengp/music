@@ -3,7 +3,7 @@
     <nav>
       <div class="navigation-buttons">
         <router-link to="/" style="text-decoration: none"
-          ><h1 class="nav-logo">Music</h1></router-link
+          ><h1 class="nav-logo">ZengJia Music</h1></router-link
         >
       </div>
       <div class="navigation-links">
