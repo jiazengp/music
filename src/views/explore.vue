@@ -73,13 +73,9 @@
 <script>
 import { mapState, mapMutations } from 'vuex'
 import NProgress from 'nprogress'
-import {
-  topPlaylist,
-  highQualityPlaylist,
-  recommendPlaylist,
-  toplists,
-} from '@/api/playlist'
+import { topPlaylist, highQualityPlaylist, toplists } from '@/api/playlist';
 import { playlistCategories } from '@/utils/staticData'
+import { getRecommendPlayList } from '@/utils/playList';
 
 export default {
   name: 'Explore',
@@ -153,9 +149,9 @@ export default {
       return this.getTopPlayList()
     },
     getRecommendPlayList() {
-      recommendPlaylist({ limit: 100 }).then((data) => {
+      getRecommendPlayList(100, true).then(list => {
         this.playlists = []
-        this.updatePlaylist(data.result)
+        this.updatePlaylist(list)
       })
     },
     getHighQualityPlaylist() {

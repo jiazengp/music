@@ -320,6 +320,10 @@ const specialPlaylist = {
     name: '牛奶泡泡浴',
     gradient: 'gradient-fog',
   },
+  2829883282: {
+    name: '华语私人雷达',
+    gradient: 'gradient-yellow-red',
+  },
   5317236517: {
     name: '后朋克精选',
     gradient: 'gradient-pink-purple-blue',
