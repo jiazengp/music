@@ -566,7 +566,7 @@ export default {
       span {
         font-size: 15px;
         opacity: 0.58;
-        min-width: 28px;
+        min-width: 32px;
       }
     }
     .media-controls {
