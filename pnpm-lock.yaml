@@ -41,7 +41,7 @@ specifiers:
   express-http-proxy: 1.6.3
   extract-zip: 2.0.1
   howler: 2.2.3
-  https-localhost: 4.7.0
+  https-localhost: 4.7.1
   husky: 7.0.4
   js-cookie: 2.2.1
   lint-staged: 12.3.2
@@ -116,7 +116,7 @@ dependencies:
   express-http-proxy: 1.6.3
   extract-zip: 2.0.1
   howler: 2.2.3
-  https-localhost: 4.7.0
+  https-localhost: 4.7.1
   js-cookie: 2.2.1
   lint-staged: 12.3.2
   lodash: 4.17.21
@@ -3031,7 +3031,7 @@ packages:
     dev: false
 
   /bytes/3.0.0:
-    resolution: {integrity: sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=}
+    resolution: {integrity: sha512-pMhOfFDPiv9t5jjIXkHosWmkSyQbvsgEVNkz0ERHbuLh2T/7j4Mqqpz523Fe8MVY89KC6Sh/QfS2sM+SjgFDcw==}
     engines: {node: '>= 0.8'}
     dev: false
 
@@ -3217,13 +3217,6 @@ packages:
       define-property: 0.2.5
       isobject: 3.0.1
       static-extend: 0.1.2
-    dev: false
-
-  /clean-css/4.2.4:
-    resolution: {integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==}
-    engines: {node: '>= 4.0'}
-    dependencies:
-      source-map: 0.6.1
     dev: false
 
   /clean-stack/2.2.0:
@@ -4985,15 +4978,6 @@ packages:
       - supports-color
     dev: false
 
-  /express-minify/1.0.0:
-    resolution: {integrity: sha512-04/iYxB79jGeNZBBkbAW7L7FMG4Wtu78F1SayXIKiJD6MfqYnOI3DD8no7QOntgedYCdYUpj+Skg8QWR/2WnMQ==}
-    engines: {node: '>= 4.0.0'}
-    dependencies:
-      clean-css: 4.2.4
-      on-headers: 1.0.2
-      uglify-js: 3.15.5
-    dev: false
-
   /express/4.17.2:
     resolution: {integrity: sha512-oxlxJxcQlYwqPWKVJJtvQiwHgosH/LrLSPA+H4UxpyvSS6jC5aH+5MoHFM+KABgTOt0APue4w66Ha8jCUo9QGg==}
     engines: {node: '>= 0.10.0'}
@@ -5817,16 +5801,16 @@ packages:
       - supports-color
     dev: false
 
-  /https-localhost/4.7.0:
-    resolution: {integrity: sha512-3mC4sg2gcyB0dXGipFlc3gRuEKcEflArX6gLRii9zJJDc/hlqugoTsD/7DCYarB+KbLd3DFxIr3TADEBdyj4qg==}
+  /https-localhost/4.7.1:
+    resolution: {integrity: sha512-rl+NFV0l67/0W7fZwk4LB5gS6HdhtSFLpCpf1N+KD5WQAXtPXX1QE8H0cP8VNJii18rtpTkE9eAHdUfJ0goAnQ==}
     hasBin: true
     dependencies:
       appdata-path: 1.0.0
       compression: 1.7.4
       cors: 2.8.5
       express: 4.17.2
-      express-minify: 1.0.0
       spdy: 4.0.2
+      uglify-js: 3.15.5
     transitivePeerDependencies:
       - supports-color
     dev: false
