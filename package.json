@@ -78,7 +78,7 @@
     "lint-staged": "12.3.2",
     "lodash": "4.17.21",
     "md5": "2.3.0",
-    "music-metadata": "7.11.7",
+    "music-metadata": "7.14.0",
     "node-vibrant": "3.1.6",
     "nodemon": "2.0.15",
     "nprogress": "0.2.0",
