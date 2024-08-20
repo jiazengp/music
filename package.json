@@ -61,7 +61,7 @@
     "cli-color": "2.0.2",
     "color": "4.2.1",
     "conventional-changelog-cli": "2.2.2",
-    "core-js": "3.20.3",
+    "core-js": "3.38.1",
     "critters": "0.0.16",
     "crypto-js": "4.1.1",
     "cz-conventional-changelog": "3.3.0",
